@@ -1,0 +1,115 @@
+Name  : Amkele
+Surnname : Jampethu
+Student Number: 217120180
+Task : Assingment
+
+
+1. Java Program 
+
+import java.util.Scanner;
+
+public class Rectangle {
+    static double input_length(){
+        System.out.println("Enter the length :");
+        Scanner console = new Scanner(System.in);
+        double length = console.nextDouble();
+        return length;
+     }
+   static double input_width(){
+        System.out.println("Enter the width :");
+        Scanner console = new Scanner(System.in);
+        double width = console.nextDouble();
+        return width;
+     }  
+   static double calculate_Perimeter( double len,double wid){
+        double perimeter = 2*(len*wid);
+        return perimeter;  
+     } 
+   static double calculate_Area( double len,double wid){
+       double area = len*wid;
+       return area;  
+    } 
+  public static void main(String[] args){
+      double length = input_length();
+      double width = input_width();
+      double area = alculate_Area(length,width);
+      double perimeter = calculate_Perimeter(length,width);
+    System.out.println("The area of a rectangle :" + area);
+    System.out.println("The perimeter of a rectangle :" + perimeter);
+    
+   }  
+}
+
+
+2. C# Sharp Program
+
+using System;
+
+namespace c_sharp_rectangle_program
+{
+    class Program
+    {
+        static double input_length(){
+        Console.WriteLine("Enter the length :");
+        double length = Convert.ToDouble(Console.ReadLine());
+        return length;
+   }
+        static double input_width(){
+          Console.WriteLine("Enter the width :");
+          double width = Convert.ToDouble(Console.ReadLine());
+          return width;
+   }
+        static double calculate_Perimeter(double len, double wid)
+        {
+            double perimeter = 2 * (len * wid);
+            return perimeter;
+        }
+        static double calculate_Area(double len, double wid)
+        {
+            double area = len * wid;
+            return area;
+        } 
+        static void Main(string[] args)
+        {
+         double length = input_length();
+         double width = input_width();
+         double area = calculate_Area(length,width);
+         double perimeter = calculate_Perimeter(length,width);
+      Console.WriteLine("The area of a rectangle :" + area);
+      Console.WriteLine("The perimeter of a rectangle :" + perimeter);
+      Console.ReadKey();
+        }
+    }
+}
+
+
+3. Pyton Program
+
+def input_length():
+    length = int(input("Enter the length :"))
+    return length
+
+
+def input_width():
+    width = int(input("Enter the width :"))
+    return width
+
+
+def calculate_area(len, wid):
+    area = len * wid
+    return area
+
+
+def calculate_perimeter(len, wid):
+    perimeter = 2*(len * wid)
+    return perimeter
+
+
+if __name__ == '__main__':
+    length = input_length()
+    width = input_width()
+    perimeter = calculate_perimeter(length, width)
+    area = calculate_area(length, width)
+    print("area of a rectangle :", area)
+    print("perimeter of a rectangle :", perimeter)
+
