@@ -56,9 +56,9 @@ Student no: 217120180
   {
             static void Main(string[] args)
             {
-                Rectangle Obj = new Rectangle();
-                Obj.input_Attributes();
-                Obj.output_results();
+                Rectangle Object = new Rectangle();
+                Object.input_Attributes();
+                Object.output_results();
             }
         }
     }
@@ -92,8 +92,8 @@ def calculate_perimeter(length, width):
 
 
 if __name__ == '__main__':
-    obj = Rectangle(0, 0, 0, 0)
-    obj.input_attributes()
-    obj.output_result()
+    object = Rectangle(0, 0, 0, 0)
+    object.input_attributes()
+    object.output_result()
 
 
