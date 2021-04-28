@@ -1,16 +1,15 @@
-NAME:  TANDO
-SURNAME: MAKAULA
-STUDENT NUMBER: 217291163
+Surnmae and Name: Jampethu Amkele
+student no: 217120180
 
 
 import java.util.*;
 public class Rectangle {
     
     
-     interger Area;
-     interger Perimeter;
-     interger Length;
-     interger Width;
+     int Area;
+     int Perimeter;
+     int Length;
+     int Width;
      
   public Rectangle(){
         Area = 0;
@@ -18,7 +17,7 @@ public class Rectangle {
         Length = 0;
         Width = 0;
      }
-   public Rectangle(interger length, interger width){
+   public Rectangle(int length, int width){
      this.Length = Length;
      this.Width = Width;
      }
@@ -31,11 +30,11 @@ public class Rectangle {
            width = console.nextInterger();
      }
   
-   public double calculate_Perimeter( interger length,interger width){
+   public int calculate_Perimeter( int length,int width){
         Perimeter = 2*(length*width);
         return Perimeter;  
      } 
-   public double calculate_Area( interger length,interger width){
+   public int calculate_Area( int length,int width){
        Area = length*width;
        return Area;  
     }  
