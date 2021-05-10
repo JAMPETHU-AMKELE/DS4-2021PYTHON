@@ -44,8 +44,8 @@ Student no: 217120180
 
         public void output_results()
         {
-            Console.WriteLine("The area of a rectangle :" + calculate_Area(Length, Width));
-            Console.WriteLine("The perimeter of a rectangle :" + calculate_Perimeter(Length, Width));
+            Console.WriteLine("The area of a rectangle :" + calculate_Area());
+            Console.WriteLine("The perimeter of a rectangle :" + calculate_Perimeter());
             Console.ReadKey();
         }
 
