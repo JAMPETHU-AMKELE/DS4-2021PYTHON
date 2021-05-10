@@ -13,8 +13,6 @@ Student no: 217120180
 
         public Rectangle()
         {
-            area = 0.0;
-            perimeter = 0.0;
             length = 0.0;
             width = 0.0;
         }
@@ -32,12 +30,12 @@ Student no: 217120180
             Width = Convert.ToDouble(Console.ReadLine());
             
         }
-        public Double calculate_Perimeter(Double l, Double w)
+        public Double calculate_Perimeter()
         {
-            perimeter = 2 * (l * w);
+            perimeter = 2 * (l + w);
             return perimeter;
         }
-        public Double calculate_Area(Double l, Double w)
+        public Double calculate_Area()
         {
             area = l * w;
             return area;
@@ -69,8 +67,6 @@ Student no: 217120180
 
 class Rectangle:
     def __init__(self, perimeter, area, length, width):
-        self.perimeter = perimeter
-        self.area = area
         self.length = length
         self.width = width
 
@@ -83,12 +79,12 @@ class Rectangle:
         print("perimeter of a rectangle :", calculate_perimeter(self.length, self.width))
 
 
-def calculate_area(length, width):
+def calculate_area():
     return length * width
 
 
-def calculate_perimeter(length, width):
-    return 2 * (length * width)
+def calculate_perimeter():
+    return 2 * (length + width)
 
 
 if __name__ == '__main__':
